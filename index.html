@@ -1,1 +1,27 @@
-
+<html lang="en">
+    <head>
+        <meta charset="UTF8">
+        <title>Personal web site for Stardance Project</title>
+    </head>
+    <body>
+               <input type="checkbox" id="button" style="display:none">
+        <label for="button" style="padding:10px; background:#000; color:#fff; border:2px solid #000000; cursor:pointer; font-weight:bold;"> 
+            <span class="Darkmode">Darkmode</span>
+            <span class="Lightmode">Lightmode</span>
+        </label>   
+        <style>
+            html:has(#button:checked) body {
+                background-color: #000000;
+                color: #fff;
+                background-image: repeating-linear-gradient(0deg ,transparent , transparent 40px , #000000 40px, #000000 42px);
+            }
+            html:has(#button:checked) .Darkmode {display:none}
+            html:has(#button:checked) .Lightmode {display:inline}
+        </style>
+        
+        <link rel="stylesheet" href="style.css">
+         <h1>Hi my name is Rüzgar im a middle school student from Turkey.</h1>
+            <p1 class="Int">Im interested in cyber security , music , software development and hardware development.</p1>
+    </head>
+    </body>
+</html>
